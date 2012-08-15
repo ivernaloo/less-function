@@ -9,6 +9,7 @@ frequently use css function.collectioned for accelerate webapp development
 * [使用]
 * [例子]
 
+* * *
 <h3 id="overview">概述</h3>
 less function是把常用的css以class的形式封装起来，隔离浏览器的差异性，方便调用与组合(minix)
 
