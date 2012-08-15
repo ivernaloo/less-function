@@ -1,0 +1,15 @@
+.left() { float:  left; _display: inline; }
+.right() { float: right; _display: inline; }
+
+
+.clear() {
+
+    &:after{
+        content:" ";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+    }
+    zoom:1;
+}
