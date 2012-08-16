@@ -13,3 +13,13 @@
     }
     zoom:1;
 }
+
+
+
+/* 处理兼容性的透明基础类 */
+.opacity (@opacity) {
+    opacity: @opacity;
+    -ms-filter: ~`"progid:DXImageTransform.Microsoft.Alpha(Opacity=" + "@{opacity}" * 100 + ")"`;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+    filter: ~`"alpha(opacity=" + "@{opacity}" * 100 + ")"`;
+}
